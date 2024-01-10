@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-file/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>OYEKANMI BOLAJI ENTERPRISE <img src="image/LOG.png" alt="" width="250px"></h1>
+    <div id="inputForm">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName">
+    
+        <label for="quantityInStore">Quantity in Store:</label>
+        <input type="number" id="quantityInStore">
+    
+        <label for="quantitySold">Quantity Sold:</label>
+        <input type="number" id="quantitySold">
+    
+        <label for="quantityBought">Quantity Bought:</label>
+        <input type="number" id="quantityBought">
+    
+        <label for="price">Price:</label>
+        <input type="number" id="price">
+    
+        <button onclick="addItem()">Add Item</button>
+      </div>
+    
+      <table id="itemTable">
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Quantity in Store</th>
+            <th>Quantity Sold</th>
+            <th>Quantity Bought</th>
+            <th>Total Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="itemBody">
+          <!-- Table content will be dynamically added here -->
+        </tbody>
+      </table>
+   <script src="script.js"></script>
+</body>
+</html>
